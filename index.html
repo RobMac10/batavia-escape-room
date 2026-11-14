@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="In Case of Emergency: an escape-room story of the Batavia, at the WA Shipwrecks Museum.">
+  <title>In Case of Emergency</title>
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/favicon-180.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#stage">Skip to the story</a>
+  <header class="top">
+    <button class="brand" type="button" data-go="title" id="brand">
+      In Case of Emergency
+      <small>An escape-room story of the Batavia</small>
+    </button>
+    <nav class="top-nav">
+      <button type="button" id="btn-map" hidden>The story map</button>
+      <button type="button" id="btn-menu" aria-expanded="false" aria-controls="menu">Menu</button>
+    </nav>
+  </header>
+  <div id="menu" hidden role="menu">
+    <button type="button" data-go="howto" role="menuitem">How to run it</button>
+    <button type="button" data-go="teachers" role="menuitem">Answers &amp; Author’s Note</button>
+    <button type="button" id="btn-restart" role="menuitem">Start the night again</button>
+  </div>
+  <main id="stage" tabindex="-1"></main>
+  <footer class="tray" id="tray" hidden>
+    <div class="tray-inner">
+      <p class="tray-label" id="tray-label">Letters as you find them</p>
+      <div class="tray-boxes" id="tray-boxes"></div>
+    </div>
+  </footer>
+  <div id="modal-root"></div>
+  <script src="assets/story.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
